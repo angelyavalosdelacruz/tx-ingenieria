@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Detalle de Producto - TX Ingeniería</title>
+
+
+    <!-- FUENTE -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ESTILOS -->
+
+    <link
+        rel="stylesheet"
+        href="detproductos.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../JS/buscador.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../WHATSAPP/whatsapp.css"
+    >
+
+
+    <!-- FAVICON -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../imagenes/logotx.png"
+    >
+
+<link rel="stylesheet" href="../responsive.css">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+
+    <div class="logo">
+
+        <img
+            src="../imagenes/LOGO.png"
+            alt="Logo TX Ingeniería"
+        >
+
+
+        <div class="logo-text">
+
+            <h1>
+                TX INGENIERÍA
+            </h1>
+
+            <p>
+                TECNOLOGÍA & XTRUCTURA
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul class="menu">
+
+
+            <li>
+
+                <a
+                    href="../index.html"
+                >
+                    Inicio
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../CONOCENOS/CONOCENOS.html"
+                >
+                    Conócenos
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    class="activo"
+                    href="productos.html"
+                >
+                    Accesorios
+                </a>
+
+            </li>
+
+                      <li><a href="../SERVICIOS/SERVICIOS.html">Servicios</a></li>
+            <li>
+
+            </li>
+
+
+            <li>
+
+                <a
+                    href="../CONTACTO/CONTACTO.html"
+                >
+                    Contáctanos
+                </a>
+
+            </li>
+
+
+            <!-- BUSCADOR -->
+
+            <li>
+
+                <div class="search-container">
+
+
+                    <input
+                        type="text"
+                        placeholder="Buscar..."
+                        id="searchInput"
+                    >
+
+
+                    <button
+                        type="button"
+                        id="searchBtn"
+                    >
+                        🔍
+                    </button>
+
+
+                    <div
+                        id="searchResults"
+                    ></div>
+
+
+                </div>
+
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+CABECERA DEL PRODUCTO
+===================================================== -->
+
+<section class="detalle-hero">
+
+
+    <div class="detalle-container">
+
+
+        <p class="producto-etiqueta">
+            PRODUCTO INDUSTRIAL
+        </p>
+
+
+        <h1
+            id="titulo-producto"
+        >
+        </h1>
+
+
+        <p
+            id="descripcion-producto"
+        >
+        </p>
+
+
+        <a
+            href="../CONTACTO/CONTACTO.html"
+            class="btn-cotizar"
+        >
+            Solicitar cotización
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+CONTENIDO PRINCIPAL
+===================================================== -->
+
+<section class="producto-detalle-section">
+
+
+    <div class="producto-detalle-grid">
+
+
+        <!-- =================================================
+        PRODUCTO PRINCIPAL
+        ================================================= -->
+
+
+        <main class="producto-principal">
+
+
+            <!-- IMAGEN DEL PRODUCTO -->
+
+            <div class="producto-visual">
+
+
+                <div class="producto-imagen-wrapper">
+
+
+                    <span
+                        class="producto-badge"
+                    >
+                        TX
+                    </span>
+
+
+                    <img
+                        id="img1"
+                        src=""
+                        alt="Producto TX Ingeniería"
+                    >
+
+
+                </div>
+
+
+                <p
+                    class="zoom-indicador"
+                >
+                    Mueve el cursor sobre la imagen para ampliar
+                </p>
+
+
+            </div>
+
+
+            <!-- INFORMACIÓN DEL PRODUCTO -->
+
+            <div class="producto-informacion">
+
+
+                <div class="descripcion-box">
+
+
+                    <h2>
+                    </h2>
+
+
+                    <p
+                        id="descripcion-producto-secundaria"
+                    >
+                    </p>
+
+
+                </div>
+
+
+                <div
+                    class="producto-precio"
+                >
+                    
+                </div>
+
+
+                <button
+                    class="btn-favorito-det"
+                    type="button"
+                >
+
+                    ♡
+                    Añadir a favoritos
+
+                </button>
+
+
+            </div>
+
+
+        </main>
+
+
+        <!-- =================================================
+        PRODUCTOS RELACIONADOS
+        ================================================= -->
+
+
+        <aside
+            class="productos-relacionados"
+        >
+
+
+            <div
+                class="relacionados-header"
+            >
+
+
+                <p>
+                    TAMBIÉN PODRÍA INTERESARTE
+                </p>
+
+
+                <h2>
+                    Productos relacionados
+                </h2>
+
+
+            </div>
+
+
+            <div
+                id="productos-recomendados"
+                class="productos-recomendados"
+            >
+
+            </div>
+
+
+            <div
+                class="contenedor-ver-mas"
+            >
+
+
+                <a
+                    href="productos.html"
+                    class="btn-ver-mas-productos"
+                >
+
+                    VER MÁS PRODUCTOS
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </aside>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <p>
+        © 2026 TX Ingeniería - Todos los derechos reservados
+    </p>
+
+
+</footer>
+
+
+<!-- =====================================================
+SCRIPTS
+===================================================== -->
+
+
+<script
+    src="../JS/buscador.js"
+></script>
+
+
+<script
+    src="../WHATSAPP/whatsapp.js"
+></script>
+
+
+<script
+    src="productos.js"
+></script>
+
+
+</body>
+
+</html>

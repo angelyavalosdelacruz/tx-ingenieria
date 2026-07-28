@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #ffffff;
+  color: #01172f;
+}
+
+.navbar {
+  background-color: #01172f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 55px;
+}
+
+.logo-text h1 {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo-text p {
+  color: #d1d1d1;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.menu a:hover,
+.menu a.activo {
+  color: #00bfff;
+}
+
+.resultado-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    cursor:pointer;
+    border-bottom:1px solid #eee;
+}
+
+.resultado-item:hover{
+    background:#f5f5f5;
+}
+
+.resultado-item img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.resultado-item span{
+    color:#01172f;
+    font-size:14px;
+    font-weight:600;
+}
+/* ======================================================
+BASE CATÁLOGO CORPORATIVO
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:#ffffff;
+    color:#0d1b2a;
+    line-height:1.6;
+}
+
+/* ======================================================
+HERO TIPO PORTADA PDF
+====================================================== */
+
+.hero-servicios{
+    min-height:92vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 20px;
+
+    background:
+    linear-gradient(135deg, rgba(0,20,40,.85), rgba(0,60,120,.65)),
+    url("imageness/slider07.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:1000px;
+    color:#fff;
+}
+
+.hero-content span{
+    color:#00bfff;
+    font-weight:900;
+    letter-spacing:6px;
+    font-size:.85rem;
+}
+
+.hero-content h1{
+    font-size:clamp(2.4rem,4.5vw,5.2rem);
+    font-weight:900;
+    margin:25px 0;
+    line-height:1.1;
+}
+
+.hero-content p{
+    max-width:800px;
+    margin:auto;
+    color:#d7e9f7;
+    font-size:1.1rem;
+}
+
+.btn-hero{
+    display:inline-block;
+    margin-top:40px;
+    padding:14px 38px;
+    background:#00bfff;
+    color:#001522;
+    font-weight:900;
+    text-decoration:none;
+    border-radius:4px;
+    transition:.25s;
+}
+
+.btn-hero:hover{
+    background:#ffffff;
+}
+
+/* ======================================================
+INTRO (FORMATO CATÁLOGO PDF)
+====================================================== */
+
+.intro-servicios{
+    padding:120px 20px;
+    background:#ffffff;
+}
+
+.intro-container{
+    max-width:900px;
+    margin:auto;
+    text-align:left;
+}
+
+.intro-servicios span{
+    color:#00bfff;
+    font-weight:900;
+    letter-spacing:5px;
+}
+
+.intro-servicios h2{
+    font-size:2.5rem;
+    margin:20px 0;
+    font-weight:900;
+}
+
+.intro-servicios p{
+    color:#5a6a7a;
+    margin-bottom:18px;
+    line-height:2;
+}
+
+/* ======================================================
+TÍTULOS (ESTILO CATÁLOGO INDUSTRIAL)
+====================================================== */
+
+.titulo-seccion{
+    width:min(1200px,92%);
+    margin:0 auto 60px;
+    text-align:left;
+}
+
+.titulo-seccion span{
+    color:#00bfff;
+    font-weight:900;
+    letter-spacing:5px;
+    font-size:.85rem;
+}
+
+.titulo-seccion h2{
+    font-size:2.7rem;
+    font-weight:900;
+    margin-top:10px;
+}
+
+/* ======================================================
+SERVICIOS 
+====================================================== */
+.servicios-completos{
+    padding:140px 20px 180px;
+}
+
+.servicios-grid{
+    width:min(1200px,92%);
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;
+}
+
+/* TARJETAS TIPO FICHA TÉCNICA */
+.servicio-card{
+    background:#ffffff;
+    border:1px solid #e6eef5;
+    border-radius:8px;
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.3s ease;
+
+    position:relative;
+}
+
+.servicio-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+.servicio-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+/* etiqueta estilo ficha técnica */
+.numero{
+    position:absolute;
+    top:12px;
+    left:12px;
+
+    background:#00bfff;
+    color:#001522;
+    font-weight:900;
+
+    padding:6px 10px;
+    border-radius:4px;
+    font-size:.85rem;
+}
+
+.contenido{
+    padding:22px;
+}
+
+.contenido h3{
+    font-size:1.2rem;
+    font-weight:900;
+    margin-bottom:8px;
+}
+
+.contenido p{
+    color:#5a6a7a;
+    font-size:.95rem;
+    margin-bottom:12px;
+}
+
+.contenido a{
+    color:#00bfff;
+    font-weight:900;
+    text-decoration:none;
+}
+section{
+    scroll-margin-top:80px;
+}
+
+/* ======================================================
+CTA (PORTADA FINAL PDF)
+====================================================== */
+.cta-servicios{
+    margin-top:80px; /* 👈 separa visualmente del grid */
+}
+.cta-servicios{
+    position:relative;
+    padding:150px 20px;
+    color:#fff;
+    text-align:left;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,15,30,.88),
+        rgba(0,60,120,.75)
+    ),
+    url("imageness/slide2.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* capa de control visual (mejora contraste) */
+.cta-servicios::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.25);
+}
+
+.cta-content{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+    text-align:left;
+}
+
+.cta-servicios span{
+    color:#00bfff;
+    font-weight:900;
+    letter-spacing:5px;
+    font-size:.85rem;
+}
+
+.cta-servicios h2{
+    font-size:2.8rem;
+    margin:25px 0;
+    font-weight:900;
+    line-height:1.1;
+}
+
+.cta-servicios p{
+    color:#d6e6f5;
+    line-height:2;
+    max-width:700px;
+}
+
+.cta-servicios a{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 40px;
+    background:#00bfff;
+    color:#001522;
+    font-weight:900;
+    text-decoration:none;
+    border-radius:4px;
+    transition:.3s;
+}
+
+.cta-servicios a:hover{
+    background:#ffffff;
+}
+
+/* ======================================================
+RESPONSIVE
+====================================================== */
+
+@media(max-width:900px){
+
+    .servicios-grid{
+        grid-template-columns:1fr;
+    }
+
+    .capacidades-lista{
+        grid-template-columns:1fr;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .titulo-seccion,
+    .capacidades-header,
+    .intro-container{
+        text-align:center;
+    }
+}
+/* ======================================================
+CONFIGURACIÓN GENERAL PARA IMPRESIÓN
+====================================================== */
+
+@media print{
+
+    body{
+        background:#fff !important;
+        color:#000 !important;
+    }
+
+    /* ocultar cosas que no se imprimen bien */
+    .btn-hero,
+    a{
+        text-decoration:none !important;
+    }
+
+    /* evitar cortes feos */
+    section{
+        page-break-inside:avoid;
+        break-inside:avoid;
+    }
+
+    /* ======================================================
+    HERO COMO PORTADA PDF
+    ====================================================== */
+
+    .hero-servicios{
+        height:100vh;
+        page-break-after:always;
+
+        background:
+        linear-gradient(135deg, rgba(0,20,40,.9), rgba(0,60,120,.75)),
+        url("imageness/slide2.jpeg") !important;
+
+        background-size:cover;
+        background-position:center;
+    }
+
+    .hero-content{
+        color:#fff !important;
+    }
+
+    .hero-content span{
+        color:#00bfff !important;
+    }
+
+    /* ======================================================
+    INTRO COMO HOJA 2
+    ====================================================== */
+
+    .intro-servicios{
+        padding:60px 40px;
+        page-break-after:always;
+    }
+
+    .intro-servicios p{
+        color:#222 !important;
+        font-size:12pt;
+    }
+
+    /* ======================================================
+    TITULOS
+    ====================================================== */
+
+    .titulo-seccion{
+        text-align:left;
+        margin-bottom:30px;
+    }
+
+    .titulo-seccion h2{
+        font-size:20pt;
+    }
+
+    /* ======================================================
+    SERVICIOS (FORMATO CATÁLOGO IMPRESO)
+    ====================================================== */
+
+    .servicios-principales{
+        padding:40px;
+    }
+
+    .servicios-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+    }
+
+    .servicio-card{
+        border:1px solid #ddd;
+        box-shadow:none !important;
+        page-break-inside:avoid;
+    }
+
+    .servicio-card img{
+        height:180px;
+        filter:grayscale(0.2);
+    }
+
+    .contenido h3{
+        font-size:14pt;
+        color:#000 !important;
+    }
+
+    .contenido p{
+        font-size:10.5pt;
+        color:#333 !important;
+    }
+
+    .contenido a{
+        display:none; /* no se imprime links */
+    }
+
+
+    /* ======================================================
+    CTA (ÚLTIMA HOJA DEL CATÁLOGO)
+    ====================================================== */
+
+    .cta-servicios{
+        page-break-before:always;
+        background:#0b1b2b !important;
+        color:#fff !important;
+        padding:80px 40px;
+    }
+
+    .cta-servicios a{
+        background:#00bfff !important;
+        color:#000 !important;
+    }
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #01172f;
+  color: #999999;
+}

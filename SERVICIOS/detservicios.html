@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Servicios - TX Ingenieria</title>
+
+  <link rel="stylesheet" href="servicios.css">
+  <link rel="stylesheet" href="../JS/buscador.css">
+        <link rel="stylesheet" href="detservicios.css">
+
+  <link rel="icon" type="image/png" href="../imagenes/logotx.png">
+    <link rel="stylesheet" href="../WHATSAPP/whatsapp.css">
+    <script src="../WHATSAPP/whatsapp.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../responsive.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <div class="logo">
+    <img src="../imagenes/LOGO.png" alt="Logo TX Ingenieria">
+    <div class="logo-text">
+      <h1>TX INGENIERIA</h1>
+      <p>TECNOLOGIA & XTRUCTURA</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../CONOCENOS/CONOCENOS.html">Conócenos</a></li>
+      <li><a href="../PRODUCTOS/productos.html">Accesorios</a></li>
+      <li><a class="activo" href="SERVICIOS.html">Servicios</a></li>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+      <li><a href="../CONTACTO/CONTACTO.html">Contáctanos</a></li>
+      <li>
+        <div class="search-container">
+
+          <input type="text" placeholder="Buscar..." id="searchInput">
+
+          <button type="button" id="searchBtn">🔍</button>
+
+          <div id="searchResults"></div>
+
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+
+</header>
+
+
+  <title>Detalle de Servicio</title>
+<!-- HERO -->
+<section class="detalle-hero">
+
+<div class="detalle-container">
+
+<h1 id="titulo"></h1>
+
+<p id="descripcion"></p>
+
+<a
+href="../CONTACTO/CONTACTO.html"
+class="btn-cotizar"
+>
+
+Solicitar cotización
+
+</a>
+
+</section>
+
+<section class="carrusel-section">
+
+<div>
+
+<div class="carrusel">
+
+<button onclick="prev()">‹</button>
+
+<img id="img">
+
+<button onclick="next()">›</button>
+
+</div>
+
+<section class="info">
+
+<div class="info-box">
+
+<h2>Detalles del servicio</h2>
+
+<ul id="detalles"></ul>
+
+</div>
+
+</section>
+
+</div>
+
+<aside class="sugerencias">
+
+<h2>Servicios relacionados</h2>
+
+<div id="recomendados"></div>
+
+</aside>
+
+</section>
+<footer>
+  <p>© 2026 TX Ingenieria - Todos los derechos reservados</p>
+</footer>
+<script src="../JS/buscador.js"></script>
+<script src="../SERVICIOS/servicios.js" defer></script>
+</body>
+</html>

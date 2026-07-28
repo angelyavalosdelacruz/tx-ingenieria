@@ -1,0 +1,1035 @@
+/* =========================================================
+   TX INGENIERÍA — REGISTRO
+   Diseño corporativo / industrial / tecnológico
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================================================
+   BASE
+========================================================= */
+
+body{
+
+    font-family:'Montserrat', sans-serif;
+
+    background:#f4f7fa;
+
+    color:#01172f;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* =========================================================
+   BUSCADOR
+========================================================= */
+
+.resultado-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px;
+
+    cursor:pointer;
+
+    border-bottom:1px solid #edf1f4;
+
+    background:#fff;
+
+}
+
+
+.resultado-item:hover{
+
+    background:#f5f8fb;
+
+}
+
+
+.resultado-item img{
+
+    width:50px;
+
+    height:50px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+}
+
+
+.resultado-item span{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#01172f;
+
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+
+    background:#01172f;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 18px rgba(0,0,0,.22);
+
+}
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+.logo img{
+
+    height:60px;
+
+}
+
+
+.logo-text h1{
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+    font-weight:900;
+
+}
+
+
+.logo-text p{
+
+    color:#d8d8d8;
+
+    font-size:.8rem;
+
+    font-style:italic;
+
+}
+
+
+.menu{
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+    align-items:center;
+
+}
+
+
+.menu li{
+
+    position:relative;
+
+}
+
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-weight:700;
+
+    transition:.3s ease;
+
+}
+
+
+.menu a:hover,
+
+.menu a.activo{
+
+    color:#00bfff;
+
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.breadcrumb{
+
+    padding:18px 8%;
+
+    background:#fff;
+
+    border-bottom:1px solid #e9edf4;
+
+    color:#6d7c8b;
+
+    font-size:.88rem;
+
+}
+
+
+.breadcrumb a{
+
+    color:#2052A0;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
+
+.registro-wrap{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 7% 75px;
+
+}
+
+
+/* =========================================================
+   TARJETA PRINCIPAL
+========================================================= */
+
+.registro-box{
+
+    width:100%;
+
+    max-width:1180px;
+
+    min-height:650px;
+
+    display:grid;
+
+    grid-template-columns:42% 58%;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:1px solid #e3eaf1;
+
+    box-shadow:
+
+        0 20px 55px rgba(1,23,47,.10),
+
+        0 4px 14px rgba(1,23,47,.04);
+
+}
+
+
+/* =========================================================
+   PANEL DE MARCA
+========================================================= */
+
+.lado-marca{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:65px 55px;
+
+    color:#fff;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            #01172f 0%,
+
+            #062d5b 60%,
+
+            #0a4b83 100%
+
+        );
+
+}
+
+
+/* Línea superior cyan */
+
+.lado-marca::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#00bfff;
+
+}
+
+
+/* Marca decorativa */
+
+.lado-marca::after{
+
+    content:"TX";
+
+    position:absolute;
+
+    right:-45px;
+
+    bottom:-85px;
+
+    font-size:270px;
+
+    font-weight:900;
+
+    line-height:1;
+
+    color:#fff;
+
+    opacity:.035;
+
+    pointer-events:none;
+
+}
+
+
+/* Identificador */
+
+.lado-marca > span{
+
+    position:relative;
+
+    z-index:1;
+
+    margin-bottom:24px;
+
+    color:#00bfff;
+
+    font-size:.78rem;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+}
+
+
+/* Título */
+
+.lado-marca h2{
+
+    position:relative;
+
+    z-index:1;
+
+    max-width:390px;
+
+    margin-bottom:24px;
+
+    font-size:2.85rem;
+
+    line-height:1.1;
+
+    font-weight:900;
+
+}
+
+
+/* Línea decorativa */
+
+.lado-marca h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:72px;
+
+    height:4px;
+
+    margin-top:22px;
+
+    border-radius:50px;
+
+    background:#00bfff;
+
+}
+
+
+/* Descripción */
+
+.lado-marca > p{
+
+    position:relative;
+
+    z-index:1;
+
+    max-width:400px;
+
+    margin-bottom:40px;
+
+    color:#d8e4ee;
+
+    font-size:.94rem;
+
+    line-height:1.85;
+
+}
+
+
+/* =========================================================
+   TARJETAS DEL PANEL IZQUIERDO
+========================================================= */
+
+.marca-card{
+
+    position:relative;
+
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:14px;
+
+    max-width:430px;
+
+}
+
+
+.marca-card > div{
+
+    padding:20px 18px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(5px);
+
+}
+
+
+.marca-card strong{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#fff;
+
+    font-size:.75rem;
+
+    letter-spacing:1.5px;
+
+}
+
+
+.marca-card p{
+
+    color:#c7d7e4;
+
+    font-size:.73rem;
+
+    line-height:1.65;
+
+}
+
+
+/* =========================================================
+   PANEL DEL FORMULARIO
+========================================================= */
+
+.lado-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:58px 70px;
+
+    background:#fff;
+
+}
+
+
+/* =========================================================
+   CABECERA DEL FORMULARIO
+========================================================= */
+
+.cabecera-form span{
+
+    display:block;
+
+    margin-bottom:13px;
+
+    color:#00aeea;
+
+    font-size:.75rem;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+}
+
+
+.cabecera-form h1{
+
+    margin-bottom:12px;
+
+    color:#01172f;
+
+    font-size:2.35rem;
+
+    font-weight:900;
+
+    letter-spacing:-.5px;
+
+}
+
+
+.nota-cuenta{
+
+    margin-bottom:35px;
+
+    color:#7b8997;
+
+    font-size:.88rem;
+
+}
+
+
+.nota-cuenta a{
+
+    color:#2052A0;
+
+    font-weight:800;
+
+    text-decoration:none;
+
+}
+
+
+.nota-cuenta a:hover{
+
+    color:#00aeea;
+
+}
+
+
+/* =========================================================
+   FORMULARIO
+========================================================= */
+
+.formulario{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px 24px;
+
+}
+
+
+.formulario h3{
+
+    grid-column:1 / -1;
+
+    margin-top:15px;
+
+    padding-bottom:11px;
+
+    border-bottom:1px solid #e6edf3;
+
+    color:#2052A0;
+
+    font-size:.78rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+
+.formulario h3:first-child{
+
+    margin-top:0;
+
+}
+
+
+/* Campos que ocupan todo el ancho */
+
+.campo:has(#correo),
+
+.campo:has(#telefono){
+
+    grid-column:1 / -1;
+
+}
+
+
+/* =========================================================
+   CAMPOS
+========================================================= */
+
+.campo{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.campo label{
+
+    margin-bottom:8px;
+
+    color:#263b4d;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+
+.campo input{
+
+    width:100%;
+
+    height:50px;
+
+    padding:0 15px;
+
+    border:1px solid #dbe4ec;
+
+    border-radius:7px;
+
+    background:#fbfcfd;
+
+    color:#01172f;
+
+    font-family:'Montserrat', sans-serif;
+
+    font-size:.88rem;
+
+    transition:.25s ease;
+
+}
+
+
+.campo input:hover{
+
+    border-color:#b8c8d6;
+
+}
+
+
+.campo input:focus{
+
+    outline:none;
+
+    border-color:#00aeea;
+
+    background:#fff;
+
+    box-shadow:0 0 0 4px rgba(0,191,255,.10);
+
+}
+
+
+/* =========================================================
+   RADIOS
+========================================================= */
+
+.radio-grupo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding-top:4px;
+
+}
+
+
+.radio-grupo label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    color:#536474;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+
+.radio-grupo input{
+
+    accent-color:#00aeea;
+
+}
+
+
+/* =========================================================
+   BOTÓN
+========================================================= */
+
+.btn-cuenta{
+
+    grid-column:1 / -1;
+
+    width:100%;
+
+    height:54px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:7px;
+
+    background:#01172f;
+
+    color:#fff;
+
+    font-family:'Montserrat', sans-serif;
+
+    font-size:.82rem;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+
+.btn-cuenta:hover{
+
+    background:#0a4b83;
+
+    box-shadow:0 8px 20px rgba(1,23,47,.18);
+
+    transform:translateY(-2px);
+
+}
+
+
+.btn-cuenta:active{
+
+    transform:translateY(0);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    padding:28px 20px;
+
+    background:#01172f;
+
+    color:#8996a3;
+
+    text-align:center;
+
+}
+
+
+footer p{
+
+    font-size:.82rem;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px){
+
+    .registro-wrap{
+
+        padding:45px 5% 60px;
+
+    }
+
+
+    .registro-box{
+
+        grid-template-columns:1fr;
+
+        max-width:650px;
+
+    }
+
+
+    .lado-marca{
+
+        padding:50px 45px;
+
+    }
+
+
+    .lado-marca h2{
+
+        font-size:2.4rem;
+
+    }
+
+
+    .lado-form{
+
+        padding:48px 45px;
+
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    .navbar{
+
+        padding:14px 18px;
+
+    }
+
+
+    .logo img{
+
+        height:48px;
+
+    }
+
+
+    .logo-text h1{
+
+        font-size:1rem;
+
+    }
+
+
+    .logo-text p{
+
+        font-size:.65rem;
+
+    }
+
+
+    .breadcrumb{
+
+        padding:15px 6%;
+
+        font-size:.78rem;
+
+    }
+
+
+    .registro-wrap{
+
+        padding:30px 18px 45px;
+
+    }
+
+
+    .registro-box{
+
+        border-radius:15px;
+
+    }
+
+
+    .lado-marca{
+
+        padding:42px 28px;
+
+    }
+
+
+    .lado-marca h2{
+
+        font-size:2rem;
+
+    }
+
+
+    .lado-marca > p{
+
+        font-size:.87rem;
+
+        line-height:1.7;
+
+    }
+
+
+    .marca-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .lado-form{
+
+        padding:40px 28px;
+
+    }
+
+
+    .cabecera-form h1{
+
+        font-size:2rem;
+
+    }
+
+
+    .formulario{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .campo:has(#correo),
+
+    .campo:has(#telefono){
+
+        grid-column:auto;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .lado-marca h2{
+
+        font-size:1.75rem;
+
+    }
+
+
+    .lado-form{
+
+        padding:35px 22px;
+
+    }
+
+
+    .cabecera-form h1{
+
+        font-size:1.8rem;
+
+    }
+
+
+    .formulario{
+
+        gap:18px;
+
+    }
+
+}

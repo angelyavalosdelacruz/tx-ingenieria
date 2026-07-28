@@ -1,0 +1,100 @@
+/* Ajustes compartidos para pantallas pequeñas y medianas */
+html { overflow-x: hidden; }
+img, video { max-width: 100%; }
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 8px;
+  color: #fff;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 12px 20px !important;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .logo { min-width: 0; }
+  .logo img { height: 44px !important; width: auto; }
+  .logo-text h1 { font-size: 1rem !important; }
+  .logo-text p { font-size: .65rem !important; }
+  .menu-toggle { display: none; }
+  .navbar nav { width: 100%; display: block; }
+  nav ul.menu {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0 !important;
+    padding: 10px 0 4px;
+  }
+  nav ul.menu > li { width: 100%; }
+  nav ul.menu > li > a {
+    display: block;
+    padding: 13px 4px;
+  }
+  .submenu {
+    position: static !important;
+    min-width: 0 !important;
+    margin: 0 0 6px;
+    box-shadow: none !important;
+    border-radius: 6px !important;
+    background: #f4f7fb !important;
+  }
+  .dropdown:hover .submenu { display: none; }
+  .dropdown.submenu-open .submenu { display: block !important; }
+  .submenu li a { padding: 11px 14px !important; font-size: .78rem !important; }
+  .search-container { width: 100%; margin: 6px 0; }
+  .search-container input { width: calc(100% - 46px) !important; }
+  #searchResults { width: 100% !important; left: 0 !important; }
+
+  .hero-slider, .hero, .hero-conocenos, .hero-servicios { height: min(720px, calc(100vh - 80px)) !important; min-height: 540px; }
+  .content, .hero-content { padding: 72px 24px 56px !important; }
+  .title, .hero-content h1 { font-size: clamp(2.1rem, 10vw, 3.5rem) !important; }
+  .subtitle, .hero-content span { letter-spacing: 2px !important; font-size: .72rem !important; }
+  .description, .hero-content p { font-size: .95rem !important; line-height: 1.65 !important; }
+  .slider-btn { width: 42px !important; height: 42px !important; font-size: 28px !important; }
+  .prev { left: 8px !important; } .next { right: 8px !important; }
+  .button { margin-top: 24px !important; width: 100%; max-width: 260px; }
+
+  .inicio-nosotros, .especialidades-home, .soluciones-home, .compromiso-home, .cta-home,
+  .esencia, .valores, .contacto, .intro-servicios, .servicios-section { padding: 70px 24px !important; }
+  .inicio-nosotros > h2 { margin-bottom: 34px !important; font-size: 2rem !important; }
+  .inicio-contenido, .esencia, .contacto-container, .detalle-container, .carrusel-section {
+    display: flex !important; flex-direction: column !important; gap: 32px !important;
+  }
+  .inicio-img img { width: 100% !important; height: auto !important; min-height: 260px; margin-top: 0 !important; }
+  .especialidades-grid, .porque-grid, .servicios-grid, .productos-grid { grid-template-columns: 1fr !important; }
+  .especialidad-home { height: 340px !important; }
+  .titulo-home, .titulo-soluciones { margin-bottom: 38px !important; }
+  .titulo-home h2, .titulo-soluciones h2, .compromiso-content h2, .cta-home h2 { font-size: clamp(1.9rem, 8vw, 2.6rem) !important; }
+  .soluciones-panel { margin-top: 42px !important; }
+  .panel { padding: 28px 22px !important; flex-direction: column !important; gap: 12px; }
+  .panel-num { font-size: 2.3rem !important; }
+  .panel-content h3 { font-size: 1.7rem !important; }
+  .compromiso-tags { justify-content: flex-start !important; margin-top: 32px !important; }
+
+  form { width: min(100% - 32px, 620px) !important; margin-left: auto !important; margin-right: auto !important; padding: 24px !important; }
+  input, textarea, select { max-width: 100%; }
+  .login-wrap { padding: 36px 18px !important; }
+  .login-box, .registro-box { width: 100% !important; grid-template-columns: 1fr !important; }
+  .lado-info { display: none; }
+  .breadcrumb { padding: 18px 24px !important; }
+  footer { padding: 24px 18px !important; font-size: .82rem; }
+}
+
+@media (max-width: 480px) {
+  .navbar { padding: 10px 14px !important; }
+  .logo { gap: 7px !important; }
+  .logo img { height: 38px !important; }
+  .logo-text p { display: none; }
+  .hero-slider, .hero, .hero-conocenos, .hero-servicios { min-height: 510px; }
+  .content, .hero-content { padding-left: 20px !important; padding-right: 20px !important; }
+  .description { max-height: 11em; overflow: auto; }
+  .especialidad-info { padding: 24px !important; }
+  .compromiso-tags div { width: 100%; text-align: center; }
+}

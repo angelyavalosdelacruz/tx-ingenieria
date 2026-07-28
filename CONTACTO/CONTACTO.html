@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CONTÁCTANOS</title>
+
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="stylesheet" href="../JS/buscador.css">
+  <link rel="stylesheet" href="estilocontacto.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../WHATSAPP/whatsapp.css">
+    <script src="../WHATSAPP/whatsapp.js" defer></script>
+  <link rel="icon" type="image/png" href="../imagenes/logotx.png">
+<link rel="stylesheet" href="../responsive.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <div class="logo">
+    <img src="../imagenes/LOGO.png" alt="Logo TX Ingeniería">
+    <div class="logo-text">
+      <h1>TX INGENIERÍA</h1>
+      <p>TECNOLOGÍA & XTRUCTURA</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../CONOCENOS/CONOCENOS.html">Conócenos</a></li>
+      <li><a href="../PRODUCTOS/productos.html">Accesorios</a></li>
+      <li><a href="../SERVICIOS/SERVICIOS.html">Servicios</a></li>
+      <li><a class="activo" href="CONTACTO.html">Contáctanos</a></li>
+      
+      <li>
+        <div class="search-container">
+
+          <input type="text" placeholder="Buscar..." id="searchInput">
+
+          <button type="button" id="searchBtn">🔍</button>
+
+          <div id="searchResults"></div>
+
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+
+</header>
+
+<div class="section-title">
+  <br>
+  <p>CONTÁCTENOS</p>
+  <h2>Solicita una Cotización</h2>
+</div>
+<form id="formContacto">
+
+  <input type="text" placeholder="Nombres y apellidos completos" required>
+
+  <input type="email" placeholder="Correo electrónico corporativo" required>
+
+  <input type="tel" placeholder="Número de teléfono / WhatsApp" required>
+
+  <textarea placeholder="Cuéntanos sobre tu solicitud..." required></textarea>
+
+  <button type="submit">Enviar</button>
+
+</form>
+
+<footer>
+  <p>© 2026 TX Ingeniería - Todos los derechos reservados</p>
+</footer>
+
+<script src="../JS/buscador.js"></script>
+
+</body>
+</html>

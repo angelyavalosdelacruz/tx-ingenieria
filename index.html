@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TX Ingeniería</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="stylesinicio.css">
+<link rel="icon" type="image/png" href="imagenes/logotx.png">
+<link rel="stylesheet" href="JS/buscador.css">
+<link rel="stylesheet" href="WHATSAPP/whatsapp.css">
+<script src="WHATSAPP/whatsapp.js" defer></script>
+<link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+
+  <div class="logo">
+    <img src="imagenes/LOGO.png" alt="Logo TX Ingeniería">
+    <div class="logo-text">
+      <h1>TX INGENIERÍA</h1>
+      <p>TECNOLOGÍA & XTRUCTURA</p>
+    </div>
+  </div>
+  <nav>
+
+    <ul class="menu">
+
+      <!-- INICIO -->
+      <li>
+         <a class="activo" href="index.html">Inicio</a>      </li>
+
+      <!-- CONÓCENOS -->
+      <li>
+        <a href="CONOCENOS/CONOCENOS.html">Conócenos</a>
+      </li>
+
+      <!-- PRODUCTOS -->
+      <li class="dropdown">
+
+        <a href="PRODUCTOS/productos.html">
+          Accesorios
+        </a>
+
+        <ul class="submenu">
+
+          <li>
+            <a href="PRODUCTOS/productos.html#bigpiloto">
+              Big Piloto
+            </a>
+          </li>
+
+          <li>
+            <a href="PRODUCTOS/productos.html#basebig">
+              Base Big Piloto
+            </a>
+          </li>
+
+          <li>
+            <a href="PRODUCTOS/productos.html#acoplesbauer">
+              Acoples Bauer
+            </a>
+          </li>
+
+          <li>
+            <a href="PRODUCTOS/productos.html#picasoverlay">
+              Picas Overlay
+            </a>
+          </li>
+
+          <li>
+            <a href="PRODUCTOS/productos.html#portapicas">
+              Porta Picas
+            </a>
+          </li>
+
+          <li>
+            <a href="PRODUCTOS/productos.html#portapicas">
+              Ver más..
+            </a>
+          </li>
+
+
+        </ul>
+
+      </li>
+
+      <!-- SERVICIOS -->
+      <li class="dropdown">
+
+        <a href="SERVICIOS/SERVICIOS.html">
+          Servicios
+        </a>
+
+        <ul class="submenu">
+
+          <li>
+            <a href="SERVICIOS/SERVICIOS.html">
+              FABRICACION Y REPARACION DE BARRA KELLY
+            </a>
+          </li>
+
+          <li>
+            <a href="SERVICIOS/SERVICIOS.html">
+              FABRICACION Y REPARACION DE TANQUES DE LODO 
+            </a>
+          </li>
+
+          <li>
+            <a href="SERVICIOS/SERVICIOS.html">
+              FABRICACION Y REPARACION DE PLANTA MEZCLADORA DE BENTONITA
+            </a>
+          </li>
+
+          <li>
+            <a href="SERVICIOS/SERVICIOS.html">
+              FABRICACION Y REPARACION DE CORE BARREL DRILLING 
+            </a>
+          </li>
+           <li>
+            <a href="SERVICIOS/SERVICIOS.html">
+              FABRICACION Y REPARACION DE HÉLICES
+            </a>
+          </li>
+           <li>
+            <a href="SERVICIOS/SERVICIOS.html">
+              Ver más...
+            </a>
+          </li>
+        </ul>
+
+      </li>
+      <!-- CONTACTO -->
+      <li>
+        <a href="CONTACTO/CONTACTO.html">
+          Contáctanos
+        </a>
+      </li>
+
+      <!-- BUSCADOR -->
+    <li>
+    <div class="search-container">
+
+        <input
+            type="text"
+            placeholder="Buscar..."
+            id="searchInput"
+        >
+
+        <button type="button" id="searchBtn">
+            🔍
+        </button>
+
+        <div id="searchResults"></div>
+
+    </div>
+</li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+<!-- HERO -->
+<!-- HERO SLIDER -->
+<section class="hero-slider">
+
+    <div class="slide active">
+
+        <video autoplay muted loop playsinline>
+            <source src="videotxing/FONDOINICIO.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="content">
+            <p class="subtitle">
+                FABRICACIÓN • REPARACIÓN • RECONSTRUCCIÓN Y VENTA DE HERRAMIENTAS DE PERFORACIONES
+            </p>
+
+            <h1 class="title">
+                <span>TX</span> Ingeniería
+            </h1>
+
+            <p class="description">
+                Somos una empresa que brinda soluciones integrales en perforación y metalmecánica, especializándonos en la fabricación y reconstrucción de herramientas industriales de alto rendimiento.
+
+                Ofrecemos productos y servicios con altos estándares de calidad, precisión y durabilidad.
+
+                Nos enfocamos en desarrollar soluciones eficientes e innovadoras para los sectores de minería, construcción e infraestructura.
+            </p>
+
+            <a href="SERVICIOS/SERVICIOS.html" class="button">
+    VER SERVICIOS
+</a>
+        </div>
+
+    </div>
+
+    <div class="slide">
+
+        <img src="imagenes/slide1.jpeg" alt="Ingeniería y Construcción">
+
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <p class="subtitle">ÁREA ESPECIALIZADA</p>
+
+            <h1 class="title">
+                Ingeniería y Construcción
+            </h1>
+
+            <p class="description">
+                Soluciones en proyectos industriales y mineros, con tecnología de punta y seguridad certificada.
+            </p>
+<a href="SERVICIOS/SERVICIOS.html" class="button">
+    VER SERVICIOS
+</a>
+        </div>
+
+    </div>
+
+    <div class="slide">
+
+        <img src="imagenes/slide2.jpeg" alt="Soluciones Técnicas">
+
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <p class="subtitle">ÁREA ESPECIALIZADA</p>
+
+            <h1 class="title">
+                Soluciones Técnicas
+            </h1>
+
+            <p class="description">
+                Diseño y optimización de proyectos con equipos especializados en perforación y cimentación.
+            </p>
+<a href="SERVICIOS/SERVICIOS.html" class="button">
+    VER SERVICIOS
+</a>
+        </div>
+
+    </div>
+
+    <div class="slide">
+
+        <img src="imagenes/slide3.jpeg" alt="Proyectos Destacados">
+
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <p class="subtitle">ÁREA ESPECIALIZADA</p>
+
+            <h1 class="title">
+                Proyectos Destacados
+            </h1>
+
+            <p class="description">
+                Desarrollo de estructuras y herramientas industriales fabricadas con altos estándares de calidad.
+            </p>
+<a href="SERVICIOS/SERVICIOS.html" class="button">
+    VER SERVICIOS
+</a>
+        </div>
+
+    </div>
+
+    <button class="slider-btn prev">&#10094;</button>
+    <button class="slider-btn next">&#10095;</button>
+
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+<!-- estructura inicio -->
+</section>
+<section class="intro-home">
+
+</section>
+<!-- estructura inicio -->
+
+<!-- PANEL -->
+<section class="especialidades-home">
+
+    <div class="titulo-home">
+        <span>ESPECIALIDADES</span>
+        <h2>Soluciones para perforación y metalmecánica</h2>
+    </div>
+
+    <div class="especialidades-grid">
+
+        <div class="especialidad-home">
+            <img src="imagenes/slider10.jpeg">
+
+            <div class="especialidad-info">
+                <span>01</span>
+                <h3>Fabricación</h3>
+                <p>
+                    Desarrollo de componentes y herramientas para perforación con altos estándares de calidad.
+                </p>
+            </div>
+        </div>
+
+        <div class="especialidad-home">
+            <img src="imagenes/slider11.jpg">
+
+            <div class="especialidad-info">
+                <span>02</span>
+                <h3>Reparación</h3>
+                <p>
+                    Recuperación de equipos y componentes industriales para extender su vida útil.
+                </p>
+            </div>
+        </div>
+
+        <div class="especialidad-home">
+            <img src="imagenes/slider03.jpg">
+
+            <div class="especialidad-info">
+                <span>03</span>
+                <h3>Reconstrucción</h3>
+                <p>
+                    Soluciones especializadas para optimizar el rendimiento de herramientas de perforación.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- QUIÉNES SOMOS -->
+<section class="inicio-nosotros">
+
+    <h2>¿Quiénes somos?</h2>
+
+    <div class="inicio-contenido">
+
+        <div class="inicio-texto">
+            <span>Experiencia · Precisión · Confianza</span>
+
+            <p>
+                En TX Ingeniería somos especialistas en soluciones metalmecánicas para minería, perforación e industria.
+            </p>
+
+            <p>
+                Desarrollamos procesos técnicos con altos estándares de calidad, enfocados en eficiencia y durabilidad.
+            </p>
+
+            <p>
+                Nuestro compromiso es entregar soluciones confiables para entornos industriales exigentes.
+            </p>
+        </div>
+
+        <div class="inicio-img">
+            <img src="imagenes/slider07.jpeg" alt="TX Ingeniería">
+        </div>
+
+    </div>
+</section>
+<!-- COMPROMISO -->
+<section class="compromiso-home">
+
+    <div class="compromiso-overlay"></div>
+
+    <div class="compromiso-content">
+
+        <span>COMPROMISO CON LA INDUSTRIA</span>
+
+        <h2>Soluciones confiables para fabricación y reparación industrial</h2>
+
+        <p>
+            Desarrollamos herramientas y componentes metalmecánicos con precisión, durabilidad y enfoque técnico para la industria de perforación.
+        </p>
+
+        <div class="compromiso-tags">
+
+            <div>Fabricación especializada</div>
+            <div>Reparación industrial</div>
+            <div>Reconstrucción técnica</div>
+            <div>Atención personalizada</div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- NUESTRAS SOLUCIONES -->
+ <section class="soluciones-home">
+
+    <div class="titulo-soluciones">
+        <span>NUESTRAS SOLUCIONES</span>
+        <h2>Productos y Servicios para Perforación e Industria</h2>
+        <p>Soluciones metalmecánicas especializadas para minería, construcción e infraestructura.</p>
+    </div>
+
+    <div class="soluciones-panel">
+
+        <a href="PRODUCTOS/productos.html" class="panel producto">
+
+            <div class="panel-num">01</div>
+
+            <div class="panel-content">
+                <h3>Productos</h3>
+                <p>Herramientas y componentes de perforación fabricados con precisión industrial.</p>
+                <span>Explorar Productos →</span>
+            </div>
+
+        </a>
+
+        <a href="SERVICIOS/SERVICIOS.html" class="panel servicios">
+
+            <div class="panel-num">02</div>
+
+            <div class="panel-content">
+                <h3>Servicios</h3>
+                <p>Fabricación, reparación y reconstrucción de equipos industriales.</p>
+                <span>Ver servicios →</span>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+<!-- CTA -->
+<section class="cta-home">
+
+    <div class="cta-home-overlay"></div>
+
+    <div class="cta-home-content">
+
+        <h2>
+            ¿Necesitas una solución especializada?
+        </h2>
+
+        <p>
+            Estamos listos para ayudarte en tu próximo proyecto.
+        </p>
+
+        <a href="CONTACTO/CONTACTO.html" class="btn-cta-home">
+            SOLICITAR COTIZACIÓN
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    © 2026 TX Ingeniería - Todos los derechos reservados
+  </p>
+</footer>
+<script>
+const el = document.querySelector(".inicio-img");
+
+if(el){
+    const observer = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+            if(e.isIntersecting){
+                e.target.classList.add("visible");
+            }
+        });
+    },{threshold:0.3});
+
+    observer.observe(el);
+}
+</script>
+
+<script src="script.js"></script>
+
+<script src="JS/buscador.js"></script>
+
+</body>
