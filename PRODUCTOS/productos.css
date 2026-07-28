@@ -1,0 +1,862 @@
+/* =====================================================
+   RESET Y BASE
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:#fff;
+    color:#01172f;
+}
+
+
+/* =====================================================
+   BUSCADOR
+===================================================== */
+
+.resultado-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    cursor:pointer;
+    border-bottom:1px solid #eee;
+}
+
+.resultado-item:hover{
+    background:#f5f5f5;
+}
+
+.resultado-item img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.resultado-item span{
+    font-size:14px;
+    font-weight:600;
+    color:#01172f;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar{
+    background:#01172f;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    height:55px;
+    width:auto;
+}
+
+.logo-text h1{
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:900;
+}
+
+.logo-text p{
+    color:#d1d1d1;
+    font-size:.8rem;
+    font-style:italic;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu a{
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu a:hover,
+.menu a.activo{
+    color:#00bfff;
+}
+
+
+/* =====================================================
+   SUBMENÚ
+===================================================== */
+
+.submenu{
+    display:none;
+
+    position:absolute;
+    top:100%;
+    left:0;
+
+    min-width:240px;
+
+    padding:10px 0;
+
+    background:#fff;
+
+    border-radius:10px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    z-index:100;
+}
+
+.submenu li{
+    list-style:none;
+}
+
+.submenu li a{
+    display:block;
+    padding:12px 18px;
+    color:#01172f !important;
+}
+
+.submenu li a:hover{
+    background:#00bfff;
+    color:#fff !important;
+}
+
+.dropdown:hover .submenu{
+    display:block;
+}
+
+
+/* =====================================================
+   HERO PRODUCTOS
+===================================================== */
+
+.hero-productos{
+
+    position:relative;
+
+    min-height:68vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 8%;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(1,23,47,.92),
+        rgba(1,23,47,.70)
+    ),
+    url("../imagenes/slider05.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+
+/* DEGRADADO INFERIOR */
+
+.hero-productos::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:180px;
+
+    background:
+    linear-gradient(
+        transparent,
+        #f7f9fc
+    );
+}
+
+
+/* CONTENIDO HERO */
+
+.hero-overlay{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:760px;
+}
+
+.hero-mini{
+
+    margin-bottom:24px;
+
+    color:#00bfff;
+
+    font-weight:800;
+
+    letter-spacing:8px;
+}
+
+.hero-productos h1{
+
+    max-width:760px;
+
+    margin-bottom:28px;
+
+    color:#fff;
+
+    font-size:4.3rem;
+
+    line-height:.95;
+
+    font-weight:900;
+}
+
+.hero-desc{
+
+    max-width:620px;
+
+    color:#d7dce5;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+}
+
+
+/* =====================================================
+   BOTÓN SOLICITAR COTIZACIÓN
+===================================================== */
+
+.btn-cotizar{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:16px 30px;
+
+    background:#2052A0;
+
+    color:#fff;
+
+    font-family:'Montserrat', sans-serif;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+    text-decoration:none;
+
+    border:none;
+
+    transition:.35s ease;
+}
+
+.btn-cotizar:hover{
+
+    background:#00bfff;
+
+    color:#01172f;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
+}
+
+
+/* =====================================================
+   SECCIÓN PRODUCTOS
+===================================================== */
+
+.productos{
+
+    padding:80px 6% 110px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #f7f9fc,
+        #fff
+    );
+}
+
+
+/* CABECERA */
+
+.catalogo-header{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:24px;
+
+    margin-bottom:70px;
+}
+
+.catalogo-header span{
+
+    width:150px;
+    height:4px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #2052A0,
+        #00bfff
+    );
+}
+
+.catalogo-header h2{
+
+    font-size:clamp(2rem,4vw,3.4rem);
+
+    font-weight:900;
+}
+
+
+/* =====================================================
+   GRID DE PRODUCTOS
+===================================================== */
+
+.productos-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(260px,1fr)
+    );
+
+    gap:22px;
+}
+
+
+/* =====================================================
+   TARJETAS DE PRODUCTOS
+===================================================== */
+
+.producto-card{
+
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    border:1px solid #e4e8ee;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 10px 24px rgba(1,23,47,.06);
+
+    transition:.3s ease;
+}
+
+.producto-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 18px 38px rgba(1,23,47,.13);
+}
+
+
+/* IDENTIFICADOR TX */
+
+.producto-card::after{
+
+    content:"TX";
+
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:56px;
+    height:56px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,.94);
+
+    border-radius:18px;
+
+    font-weight:900;
+}
+
+
+/* IMAGEN */
+
+.producto-card img{
+
+    width:100%;
+    height:190px;
+
+    padding:18px;
+
+    object-fit:contain;
+
+    background:
+    linear-gradient(
+        180deg,
+        #fafbfd,
+        #f5f7fa
+    );
+
+    transition:.4s ease;
+}
+
+.producto-card:hover img{
+
+    transform:scale(1.015);
+}
+
+
+/* INFORMACIÓN */
+
+.info-card{
+
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+
+    padding:22px 22px 24px;
+}
+
+.info-card::before{
+
+    content:"TX INDUSTRIAL";
+
+    display:block;
+
+    margin-bottom:12px;
+
+    color:#2052A0;
+
+    font-size:.7rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+}
+
+.producto-card h3{
+
+    min-height:52px;
+
+    font-size:1rem;
+
+    line-height:1.45;
+}
+
+.precio{
+
+    margin-top:8px;
+    margin-bottom:18px;
+
+    color:#738190;
+
+    font-size:.83rem;
+}
+
+
+/* =====================================================
+   BOTÓN INFORMACIÓN
+===================================================== */
+
+.btn-info{
+
+    height:46px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #01172f,
+        #1f4c86
+    );
+
+    color:#fff;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+}
+
+.btn-info:hover{
+
+    transform:translateY(-3px);
+}
+
+
+/* =====================================================
+   FAVORITOS
+===================================================== */
+
+.acciones-producto{
+
+    display:flex;
+
+    margin-top:12px;
+}
+
+.btn-favorito{
+
+    width:100%;
+    height:48px;
+
+    background:transparent;
+
+    border:1px solid #dde5ef;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+.btn-favorito:hover{
+
+    background:#f8fbff;
+}
+
+
+/* TOAST */
+
+.favorito-toast{
+
+    position:fixed;
+
+    top:30px;
+    left:50%;
+
+    display:flex;
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.18);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transform:translateX(-50%);
+
+    transition:.3s;
+
+    z-index:9999;
+}
+
+.favorito-toast.activo{
+
+    opacity:1;
+
+    pointer-events:auto;
+}
+
+.favorito-toast img{
+
+    width:72px;
+    height:72px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+}
+
+.cerrar-toast{
+
+    border:none;
+
+    background:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   CTA PRODUCTOS
+===================================================== */
+
+.cta-productos{
+
+    position:relative;
+
+    padding:140px 8%;
+
+    background:
+    linear-gradient(
+        rgba(1,23,47,.85),
+        rgba(1,23,47,.85)
+    ),
+    url("../imagenes/slider10.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+}
+
+
+/* CONTENIDO */
+
+.cta-overlay{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:#fff;
+}
+
+
+/* TEXTO SUPERIOR */
+
+.cta-overlay p:first-child{
+
+    margin-bottom:20px;
+
+    color:#00bfff;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+}
+
+
+/* TÍTULO */
+
+.cta-overlay h2{
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+    font-size:3rem;
+
+    line-height:1.2;
+}
+
+
+/* BOTÓN CTA */
+
+.cta-overlay a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:16px 30px;
+
+    background:#2052A0;
+
+    color:#fff;
+
+    font-family:'Montserrat', sans-serif;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+}
+
+.cta-overlay a:hover{
+
+    background:#00bfff;
+
+    color:#01172f;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1200px){
+
+    .productos-grid{
+
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+}
+
+
+@media(max-width:900px){
+
+    .navbar{
+
+        padding:15px 25px;
+    }
+
+    .productos-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .hero-productos{
+
+        min-height:70vh;
+
+        padding:100px 28px;
+    }
+
+    .hero-productos h1{
+
+        font-size:3rem;
+    }
+
+    .catalogo-header span{
+
+        display:none;
+    }
+}
+
+
+@media(max-width:650px){
+
+    .productos-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero-productos h1{
+
+        font-size:2.7rem;
+    }
+
+    .hero-mini{
+
+        font-size:.75rem;
+
+        letter-spacing:4px;
+    }
+
+    .hero-desc{
+
+        font-size:.95rem;
+    }
+
+    .cta-productos{
+
+        padding:100px 25px;
+    }
+
+    .cta-overlay h2{
+
+        font-size:2.3rem;
+    }
+
+    .cta-overlay p:first-child{
+
+        letter-spacing:2px;
+    }
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    padding:30px;
+
+    background:#01172f;
+
+    color:#999999;
+
+    text-align:center;
+}
+
+
+/* =====================================================
+   ESTADO ACTIVO DEL MENÚ
+===================================================== */
+
+nav ul.menu li a:hover,
+nav ul.menu li a.activo{
+
+    color:#00bfff;
+}

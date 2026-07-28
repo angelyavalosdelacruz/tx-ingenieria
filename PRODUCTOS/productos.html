@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - TX Ingeniería</title>
+
+  <link rel="stylesheet" href="productos.css">
+  <link rel="icon" type="image/png" href="../imagenes/logotx.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../responsive.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+  <div class="logo">
+    <img src="../imagenes/LOGO.png" alt="Logo TX Ingeniería">
+
+    <div class="logo-text">
+      <h1>TX INGENIERÍA</h1>
+      <p>TECNOLOGÍA & XTRUCTURA</p>
+    </div>
+  </div>
+
+  <nav>
+
+    <ul class="menu">
+
+      <li>
+        <a href="../index.html">Inicio</a>
+      </li>
+
+      <li>
+        <a href="../CONOCENOS/CONOCENOS.html">Conócenos</a>
+      </li>
+
+      <!-- PRODUCTOS -->
+      <li class="dropdown">
+
+        <a class="activo" href="productos.html">Accesorios</a>
+
+        <ul class="submenu">
+
+          <li>
+            <a href="#bigpiloto">
+              Big Piloto
+            </a>
+          </li>
+
+          <li>
+            <a href="#basebig">
+              Base Big Piloto
+            </a>
+          </li>
+
+          <li>
+            <a href="#acoplesbauer">
+              Acoples Bauer
+            </a>
+          </li>
+
+          <li>
+            <a href="#picasoverlay">
+              Picas Overlay
+            </a>
+          </li>
+
+          <li>
+            <a href="#portapicas">
+              Porta Picas
+            </a>
+          </li>
+
+          <li>
+            <a href="#portapicas">
+              Ver más..
+            </a>
+          </li>
+        </ul>
+
+      </li>
+
+      <!-- SERVICIOS -->
+      <li class="dropdown">
+
+        <a href="../SERVICIOS/SERVICIOS.html">
+          Servicios
+        </a>
+
+        <ul class="submenu">
+
+          <li><a href="../SERVICIOS/SERVICIOS.html">FABRICACION Y REPARACION DE BARRA KELLY</a></li>
+          <li><a href="../SERVICIOS/SERVICIOS.html">FABRICACION Y REPARACION DE TANQUES DE LODO</a></li>
+          <li><a href="../SERVICIOS/SERVICIOS.html">FABRICACION Y REPARACION DE PLANTA MEZCLADORA DE BENTONITA</a></li>
+          <li><a href="../SERVICIOS/SERVICIOS.html">FABRICACION Y REPARACION DE CORE BARREL DRILLING</a></li>
+          <li><a href="../SERVICIOS/SERVICIOS.html">FABRICACION Y REPARACION DE HÉLICES</a></li>
+          <li><a href="../SERVICIOS/SERVICIOS.html">Ver más...</a></li>
+        </ul>
+
+      </li>
+
+      <li>
+        <a href="../CONTACTO/CONTACTO.html">Contáctanos</a>
+      </li>
+
+      <!-- BUSCADOR -->
+      <li>
+    <div class="search-container">
+
+        <input
+            type="text"
+            placeholder="Buscar..."
+            id="searchInput"
+        >
+
+        <button type="button" id="searchBtn">
+            🔍
+        </button>
+
+        <div id="searchResults"></div>
+
+    </div>
+</li>
+
+      </div>
+
+    </ul>
+
+  </nav>
+
+</header>
+<!-- HERO PRODUCTOS -->
+<section class="hero-productos">
+
+<div class="hero-overlay">
+
+<p class="hero-mini">
+TX INGENIERÍA
+</p>
+
+<h1>
+Soluciones industriales<br>
+para perforación<br>
+y alto rendimiento
+</h1>
+
+<p class="hero-desc">
+Fabricamos componentes industriales diseñados para soportar
+operaciones exigentes con precisión, resistencia y confiabilidad.
+</p>
+<a
+href="../CONTACTO/CONTACTO.html"
+class="btn-cotizar"
+>
+Solicitar Cotización
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CATÁLOGO -->
+<section class="productos">
+
+<div class="catalogo-header">
+
+<span></span>
+
+<h2 id="catalogo">
+CATÁLOGO DE ACCESORIOS
+</h2>
+
+<span></span>
+
+</div>
+
+  <div class="productos-grid">
+
+    <!-- 1 -->
+    <div id="bigpiloto" class="producto-card" onclick="mostrarDetalle(1)">
+
+      <img src="imagenesp/bigpilotos.png" alt="BIG PILOTO">
+
+      <div class="info-card">
+
+        <h3>BIG PILOTO</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- 2 -->
+    <div id="basebig" class="producto-card" onclick="mostrarDetalle(2)">
+
+      <img src="imagenesp/basebig.png" alt="BASE DE BIG PILOTO">
+
+      <div class="info-card">
+
+        <h3>BASE DE BIG PILOTO</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- 3 -->
+    <div id="acoplesbauer" class="producto-card" onclick="mostrarDetalle(3)">
+
+      <img src="imagenesp/codo90.png" alt="ACOPLE CODO DE 90°">
+
+      <div class="info-card">
+
+        <h3>ACOPLE CODO DE 90° TIPO BAUER DE 4</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- 4 -->
+    <div class="producto-card" onclick="mostrarDetalle(4)">
+
+      <img src="imagenesp/codo45.png" alt="ACOPLE CODO DE 45°">
+
+      <div class="info-card">
+
+        <h3>ACOPLE CODO DE 45° TIPO BAUER DE 4</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- 5 -->
+    <div class="producto-card" onclick="mostrarDetalle(5)">
+
+      <img src="imagenesp/acopleT.png" alt="ACOPLE T">
+
+      <div class="info-card">
+
+        <h3>ACOPLE CODO DE T TIPO BAUER DE 4</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- 6 -->
+    <div class="producto-card" onclick="mostrarDetalle(6)">
+
+      <img src="imagenesp/acopleY.png" alt="ACOPLE Y">
+
+      <div class="info-card">
+
+        <h3>ACOPLE CODO Y TIPO BAUER DE 4</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- 7 -->
+    <div class="producto-card" onclick="mostrarDetalle(7)">
+
+      <img src="imagenesp/Pexpansion.png" alt="PINES DE EXPANSION">
+
+      <div class="info-card">
+
+        <h3>PINES DE EXPANSION</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- 8 -->
+    <div id="picasoverlay" class="producto-card" onclick="mostrarDetalle(8)">
+
+      <img src="imagenesp/picas.png" alt="PICAS OVERLAY">
+
+      <div class="info-card">
+
+        <h3>PICAS REVESTIDA OVERLAY</h3>
+
+        <p class="precio">
+          Fabricado por TX Ingeniería
+        </p>
+
+        <button class="btn-info">
+          MÁS INFORMACIÓN
+          <span class="flecha-arriba">▲</span>
+        </button>
+      </div>
+    </div>
+
+  <!-- 9 -->
+<div class="producto-card" onclick="mostrarDetalle(9)">
+
+  <img src="imagenesp/tacosint.png" alt="TACOS INTERCAMBIABLES">
+
+  <div class="info-card">
+
+    <h3>TACOS INTERCAMBIABLES</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+      <span class="flecha-arriba">▲</span>
+    </button>
+
+  </div>
+
+</div>
+
+<!-- 10 -->
+<div id="portapicas" class="producto-card" onclick="mostrarDetalle(10)">
+
+  <img src="imagenesp/portapicas.png" alt="PORTA PICAS">
+
+  <div class="info-card">
+
+    <h3>PORTA PICAS</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+      <span class="flecha-arriba">▲</span>
+    </button>
+    </div>
+</div>
+
+<!-- 11 -->
+<div id="basetacos" class="producto-card" onclick="mostrarDetalle(11)">
+
+  <img src="imagenesp/basetacos.png" alt="BASE DE TACOS INTERCAMBIABLES">
+
+  <div class="info-card">
+
+    <h3>BASE DE TACOS INTERCAMBIABLES</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+              <span class="flecha-arriba">▲</span>
+      </button>
+
+    </div>
+</div>
+
+<!-- 12 -->
+<div id="roletbig" class="producto-card" onclick="mostrarDetalle(12)">
+
+  <img src="imagenesp/roletbig.png" alt="ROLET BIG DRILLING">
+
+  <div class="info-card">
+
+    <h3>ROLET BIG DRILLING</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+              <span class="flecha-arriba">▲</span>
+      </button>
+
+    </div>
+</div>
+
+<!-- 13-->
+<div id="cajakelly" class="producto-card" onclick="mostrarDetalle(13)">
+
+  <img src="imagenesp/cajakelly.png" alt="CAJA KELLY BOX">
+
+  <div class="info-card">
+
+    <h3>CAJA KELLY BOX</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+              <span class="flecha-arriba">▲</span>
+      </button>
+
+    </div>
+</div>
+<!-- 14-->
+<div id="sacapicas" class="producto-card" onclick="mostrarDetalle(14)">
+
+  <img src="imagenesp/sacapicas.png" alt="SACA PICAS">
+
+  <div class="info-card">
+
+    <h3>SACA PICAS</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+              <span class="flecha-arriba">▲</span>
+      </button>
+
+    </div>
+</div>
+<!-- 15-->
+<div id="acoprap" class="producto-card" onclick="mostrarDetalle(15)">
+  <img src="imagenesp/acoprap.png" alt="ACOPLAMIENTO RAPIDO">
+  <div class="info-card">
+    <h3>ACOPLAMIENTO RAPIDO</h3>
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+              <span class="flecha-arriba">▲</span>
+      </button>
+    </div>
+</div>
+
+<!-- 16 -->
+<div id="tholder" class="producto-card" onclick="mostrarDetalle(16)">
+
+  <img src="imagenesp/tholder.png" alt="PORTA PICAS (THEETH HOLDER)">
+
+  <div class="info-card">
+
+    <h3>PORTA PICAS (THEETH HOLDER)</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+      <span class="flecha-arriba">▲</span>
+    </button>
+    </div>
+</div>
+
+<!-- 17 -->
+<div id="tremie" class="producto-card" onclick="mostrarDetalle(17)">
+
+  <img src="imagenesp/tremie.png" alt="CABEZALES DE TUBO TREMIE">
+
+  <div class="info-card">
+
+    <h3>CABEZALES DE TUBO TREMIE</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+      <span class="flecha-arriba">▲</span>
+    </button>
+    </div>
+</div>
+<!-- 18 -->
+<div id="brocad" class="producto-card" onclick="mostrarDetalle(18)">
+
+  <img src="imagenesp/tremie.png" alt="BROCA DE DIENTES PLANOS">
+
+  <div class="info-card">
+
+    <h3>BROCA DE DIENTES PLANOS</h3>
+
+    <p class="precio">
+      Fabricado por TX Ingeniería
+    </p>
+
+    <button class="btn-info">
+      MÁS INFORMACIÓN
+      <span class="flecha-arriba">▲</span>
+    </button>
+    </div>
+</div>
+</section>
+
+<section class="cta-productos">
+
+<div class="cta-overlay">
+
+<p>
+TRABAJEMOS JUNTOS
+</p>
+
+<h2>
+¿Necesitas una solución industrial especializada?
+</h2>
+
+<p class="cta-texto">
+Nuestro equipo está listo para fabricar componentes
+adaptados a tus necesidades operativas.
+</p>
+
+<a href="../CONTACTO/CONTACTO.html">
+
+Solicitar Cotización →
+
+</a>
+
+</div>
+
+</section>
+<!-- FOOTER -->
+<footer>
+<p>
+© 2026 TX Ingenieria - Todos los derechos reservados
+</p>
+</footer>
+
+<!-- SCRIPTS -->
+<link rel="stylesheet" href="../JS/buscador.css">
+<link rel="stylesheet" href="../WHATSAPP/whatsapp.css">
+
+<script src="../JS/buscador.js"></script>
+<script src="../WHATSAPP/whatsapp.js" defer></script>
+<script src="productos.js"></script>
+
+</body>
+</html>
