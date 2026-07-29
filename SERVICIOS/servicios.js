@@ -94,7 +94,7 @@ const servicios = {
       "Alta precisión",
       "Resistencia industrial"
     ]
-  },
+  }
 
 };
 
