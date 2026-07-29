@@ -1,11 +1,5 @@
 /* =========================================================
    TX INGENIERÍA — REGISTRO
-   Diseño corporativo / industrial / tecnológico
-========================================================= */
-
-
-/* =========================================================
-   RESET
 ========================================================= */
 
 *{
@@ -116,47 +110,46 @@ body{
 
 }
 
-
 .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity .2s ease;
 }
 
+.logo:hover{
+    opacity: .85;
+}
+
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active{
+    text-decoration: none;
+    color: inherit;
+}
 
 .logo img{
-
-    height:60px;
-
+    height:55px;
 }
-
 
 .logo-text h1{
-
-    color:#fff;
-
-    font-size:1.2rem;
-
+    color:#ffffff;
+    font-size:1.2em;
     font-weight:900;
-
+    letter-spacing:1px;
+    text-decoration:none;
 }
-
 
 .logo-text p{
-
-    color:#d8d8d8;
-
-    font-size:.8rem;
-
+    color:#d1d1d1;
+    font-size:.8em;
     font-style:italic;
-
+    text-decoration:none;
 }
-
-
 .menu{
 
     display:flex;
