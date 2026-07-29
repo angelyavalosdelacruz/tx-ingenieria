@@ -26,6 +26,14 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+
+.logo:hover{
+  opacity: .85;
 }
 
 .logo img {
