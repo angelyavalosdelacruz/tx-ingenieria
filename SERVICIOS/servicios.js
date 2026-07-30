@@ -75,7 +75,7 @@ const servicios = {
   "tremie": {
     titulo: "Fabricación de Jaula y Tubo Tremie",
     descripcion: "Producción de jaulas y tubos Tremie, indispensables para la colocación controlada de concreto bajo agua.",
-    imagenes: ["imageness/tremie0.jpeg", "imageness/tremie00.jpeg", "imageness/tremie02.jpeg", "imageness/tremie03.jpeg"],
+    imagenes: ["imageness/tremie0.jpeg", "imageness/tremie000.jpeg", "imageness/tremie02.jpeg", "imageness/tremie03.jpeg"],
     detalles: [
       "Flujo continuo de concreto",
       "Estabilidad en cimentaciones",
